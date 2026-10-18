@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// Intruder alerts. The device appends new alerts and the owner app reads them
+// back. Records are append-only (no edits/deletes from clients). Access is not
+// gated on auth so the flow works on the free tier without enabling an auth
+// provider; to tighten, enable Anonymous Auth and replace the `if true`
+// conditions below with `if request.auth != null`.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /intruder_alerts/{alertId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

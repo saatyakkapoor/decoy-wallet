@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_au_mark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/setup_title"
+        android:textColor="@color/brand_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/setupSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/setup_choose_pin"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <View android:id="@+id/dot0" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="12dp" android:background="@drawable/pin_dot_empty" />
+        <View android:id="@+id/dot1" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="12dp" android:background="@drawable/pin_dot_empty" />
+        <View android:id="@+id/dot2" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="12dp" android:background="@drawable/pin_dot_empty" />
+        <View android:id="@+id/dot3" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="12dp" android:background="@drawable/pin_dot_empty" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setupError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/danger"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/KeypadRow">
+            <TextView style="@style/KeypadKey" android:text="1" />
+            <TextView style="@style/KeypadKey" android:text="2" />
+            <TextView style="@style/KeypadKey" android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeypadRow">
+            <TextView style="@style/KeypadKey" android:text="4" />
+            <TextView style="@style/KeypadKey" android:text="5" />
+            <TextView style="@style/KeypadKey" android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeypadRow">
+            <TextView style="@style/KeypadKey" android:text="7" />
+            <TextView style="@style/KeypadKey" android:text="8" />
+            <TextView style="@style/KeypadKey" android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeypadRow">
+            <Space
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp" />
+
+            <TextView style="@style/KeypadKey" android:text="0" />
+
+            <ImageView
+                android:id="@+id/keyBackspace"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_keypad_key"
+                android:contentDescription="@string/app_name"
+                android:padding="22dp"
+                android:src="@drawable/ic_backspace" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

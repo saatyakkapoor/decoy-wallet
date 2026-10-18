@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageView android:id="@+id/btnBack" android:layout_width="44dp" android:layout_height="44dp"
+            android:background="@drawable/bg_circle_action" android:padding="11dp" android:src="@drawable/ic_back" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:text="Send Money"
+            android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="28dp">
+
+            <TextView style="@style/FieldLabel" android:text="Recipient name" />
+            <EditText android:id="@+id/inName" style="@style/InputField"
+                android:hint="e.g. Priya Verma" android:inputType="textPersonName" />
+
+            <TextView style="@style/FieldLabel" android:layout_marginTop="18dp" android:text="UPI ID / Mobile number" />
+            <EditText android:id="@+id/inUpi" style="@style/InputField"
+                android:hint="name@upi or 98XXXXXXXX" android:inputType="text" />
+
+            <TextView style="@style/FieldLabel" android:layout_marginTop="18dp" android:text="Amount" />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:background="@drawable/bg_input" android:gravity="center_vertical"
+                android:orientation="horizontal" android:paddingHorizontal="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="₹" android:textColor="@color/text_primary" android:textSize="26sp" />
+                <EditText android:id="@+id/inAmount"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@null" android:hint="0" android:inputType="numberDecimal"
+                    android:paddingStart="8dp" android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" android:textSize="26sp"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <TextView style="@style/FieldLabel" android:layout_marginTop="18dp" android:text="Note (optional)" />
+            <EditText android:id="@+id/inNote" style="@style/InputField"
+                android:hint="e.g. Dinner, rent…" android:inputType="text" />
+
+            <Space android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <TextView android:id="@+id/btnPay" style="@style/PrimaryButton" android:text="Proceed to Pay" />
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:gravity="center"
+                android:text="Secured by AU Bank UPI"
+                android:textColor="@color/text_muted" android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="24dp">
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.1" />
+
+    <FrameLayout
+        android:id="@+id/checkWrap"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:background="@drawable/bg_success_circle">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_success_inner"
+            android:padding="14dp"
+            android:src="@drawable/ic_check" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/successTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Payment Successful"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/successAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="₹0"
+        android:textColor="@color/success"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout style="@style/SuccessRow">
+            <TextView style="@style/SuccessKey" android:text="To" />
+            <TextView android:id="@+id/rowTo" style="@style/SuccessVal" android:text="—" />
+        </LinearLayout>
+
+        <View style="@style/Divider" android:layout_marginStart="0dp" android:layout_marginVertical="12dp" />
+
+        <LinearLayout style="@style/SuccessRow">
+            <TextView style="@style/SuccessKey" android:text="Transaction ID" />
+            <TextView android:id="@+id/rowTxn" style="@style/SuccessVal" android:text="—" />
+        </LinearLayout>
+
+        <View style="@style/Divider" android:layout_marginStart="0dp" android:layout_marginVertical="12dp" />
+
+        <LinearLayout style="@style/SuccessRow">
+            <TextView style="@style/SuccessKey" android:text="Date &amp; Time" />
+            <TextView android:id="@+id/rowDate" style="@style/SuccessVal" android:text="—" />
+        </LinearLayout>
+
+        <View style="@style/Divider" android:layout_marginStart="0dp" android:layout_marginVertical="12dp" />
+
+        <LinearLayout style="@style/SuccessRow">
+            <TextView style="@style/SuccessKey" android:text="Paid using" />
+            <TextView style="@style/SuccessVal" android:text="AU Bank · UPI" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.4" />
+
+    <TextView
+        android:id="@+id/btnDone"
+        style="@style/PrimaryButton"
+        android:layout_marginBottom="28dp"
+        android:text="Done" />
+
+</LinearLayout>

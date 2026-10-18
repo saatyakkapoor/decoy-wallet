@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AU Bank screenshot palette -->
+    <color name="brand_primary">#5C2D91</color>
+    <color name="brand_primary_dark">#3F1D6B</color>
+    <color name="brand_accent">#7B4BB8</color>
+    <color name="brand_cta">#5C2D91</color>
+    <color name="brand_deep">#2E1458</color>
+
+    <color name="bg">#FFFFFF</color>
+    <color name="bg_elevated">#FFF8FB</color>
+    <color name="bg_hero">#FCEEF5</color>
+    <color name="card">#FFFFFF</color>
+    <color name="card_stroke">#EEDFE8</color>
+    <color name="icon_circle">#F8EAF2</color>
+
+    <color name="text_primary">#3D1F6B</color>
+    <color name="text_secondary">#6B4F8A</color>
+    <color name="text_muted">#9A84B0</color>
+
+    <color name="danger">#D32F2F</color>
+    <color name="danger_dim">#FDECEA</color>
+    <color name="warning">#F9A825</color>
+    <color name="success">#2E7D32</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

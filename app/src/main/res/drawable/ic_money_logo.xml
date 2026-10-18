@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Gold circle -->
+    <path
+        android:fillColor="#F5B700"
+        android:pathData="M54,8c25.4,0 46,20.6 46,46S79.4,100 54,100 8,79.4 8,54 28.6,8 54,8z" />
+    <path
+        android:fillColor="#FFE566"
+        android:pathData="M54,16c20.99,0 38,17.01 38,38S74.99,92 54,92 16,74.99 16,54 33.01,16 54,16z" />
+    <!-- Rupee mark -->
+    <path
+        android:fillColor="#5C2D91"
+        android:pathData="M38,34h32v6H58.2c1.2,2.2 1.9,4.7 1.9,7.3H70v6H60.1c-1.1,7.4 -7.2,13.1 -14.9,14.1L62,82H52.5L36.2,67.5V62h8.2c5.1,0 9.4,-3.5 10.5,-8.2H36v-6h18.7c-0.8,-3.3 -3.7,-5.8 -7.3,-5.8H36V34z" />
+</vector>

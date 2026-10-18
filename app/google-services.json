@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499165503083",
+    "project_id": "decoy-wallet-96256",
+    "storage_bucket": "decoy-wallet-96256.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499165503083:android:01fb429480821211295b2e",
+        "android_client_info": {
+          "package_name": "com.example.decoywallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIYXlFySdb5EqWmeg3xcmTGM_Pepz_FP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
